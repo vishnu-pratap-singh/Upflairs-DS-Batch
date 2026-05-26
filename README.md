@@ -1,2 +1,2 @@
-# Upflairs-DS-Batch
+# Upflairs-DATA SCIENCE-Internship
 Data Science and AI and ML intership 
