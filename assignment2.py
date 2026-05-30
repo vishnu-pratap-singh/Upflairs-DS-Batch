@@ -108,3 +108,85 @@ print(a%b)
 # ******************Question 4 **********************************************************
 
 # write  python progamme to create a list of square of numbers from 1 to 20 using list comprehension
+# also create anoter list containing only even squares
+
+
+square=[num*num for num in range(1,20)]
+
+print(square)
+
+even_square=[num*num for num in range(1,20) if num%2==0]
+print(even_square)
+
+
+
+
+# ***************************question 5 *************************************************
+
+"""
+create a dictionary name 5 students and their marks 
+task print marks od a particular student
+find the student with highest marks
+add one new studnet with marks 
+"""
+
+students={
+    "vishnu" : 92,
+    "Akil"   :85,
+    "chandan":86
+
+}
+print(students["vishnu"])
+top_student=None
+highest_marks=-1
+for student, marks in students.items():
+    if marks > highest_marks:
+        highest_marks=marks
+        top_student=student
+
+print(f"student with highest marks {top_student} @ score {highest_marks}")
+
+# """ output :
+            #  student with highest marks vishnu @ score 92
+# 
+# """
+# 
+
+"""
+create a dic store student details(name, age ,course) create a set of 5 unique num
+take a num as string and convert it into integer using type casting
+print all values properly
+
+"""
+
+student_detail={
+    "name":"shallu",
+    "age" : 25,
+    "course": "MBA"
+
+}
+print(student_detail)
+
+unique_num={10,25,30,45}
+
+num=string(input("enter num"))
+num_integer=int(num)
+print("\n type casting result ")
+print(f'original string {num} and type casted value {num_integer}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
