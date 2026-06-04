@@ -11,6 +11,7 @@ print("Hello Welcome to second assignment")
 
 
 
+
 balance= int(input("Enter your account balance "))
 pin = int(input("Enter Atm 6 digit pin "))
 Amount_withdraw=int(input("Enter Amount you want to withdraw "))
@@ -121,6 +122,7 @@ print(even_square)
 
 
 
+
 # ***************************question 5 *************************************************
 
 """
@@ -173,6 +175,7 @@ num=string(input("enter num"))
 num_integer=int(num)
 print("\n type casting result ")
 print(f'original string {num} and type casted value {num_integer}')
+
 
 
 
