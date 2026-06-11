@@ -1,0 +1,132 @@
+print("Numpy assignment")
+
+"""
+Explain Numpy and its importance in Data science and Machine learning
+
+Ans: NUmpy is Python libraries provide fast accurate computational 
+speed and perform over multidimensional Array 
+
+why important for Data Science and Machine Learning ?
+
+1.> Numpy save memory in in blockes rather than scattred form
+2.> Numpy helps to avoid loop because several inbilt library available
+3.> it serve fundamental libraries for Pandas, scikit-learn
+4.> handle complex linear algebra for train Ai modal
+5.> converts image, sound , text into predictble number 
+
+
+"""
+
+# ***************************************************************
+"""
+Difference between LIsts and Numpy 
+
+
+Ans: Difference between Numpy and List:
+
+
+List holds different data Type (String, number, objects)but numpy array strictly
+to one data type 
+
+List store data in scatterd form in memory but Numpy Array store data in continuous block
+
+for filter or search list require loop over list but Numpy 
+Array perform maths in one shot 
+
+list are simple and slow but Numpy array is way fster than list.
+
+
+"""
+
+# ********************************************************************************************
+                        
+# *****************************************************************************************
+
+
+"""
+Question 3:
+
+3. Write a NumPy program to: 
+● Create a 1D array of numbers from 1 to 10 
+● Create a 3×3 matrix 
+● Perform: 
+    o Addition 
+    o Multiplication
+    o Reshaping operations 
+● Expected Concepts: 
+        o np.array() 
+        o np.arange() 
+        o reshape()
+
+"""
+import numpy as np
+
+arr_1d = np.arange(1,11)
+print(f' 1D array is {arr_1d}')
+
+matrix= np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(f'3x3 matrix is \n {matrix}')
+
+# perform addiotion on matrix 
+add_matrix= matrix +10
+print(f'\n after adding 10 to each element in matrix \n {add_matrix} ')
+
+#perform multiplication in matrix 
+
+mul_matrix = matrix * 3
+print(f'\n after multilpying with 3 to each element to matrix: \n {mul_matrix}')
+
+reshaped_arr= arr_1d.reshape(2,5)
+print(f'\n after applying reshape() method to arr_1D \n  {reshaped_arr}')
+
+
+# ********************************************************************************* 
+
+# ********************************************************************************** 
+
+"""
+Question 4.
+create a numpy RY THE DATASET below 
+marks: 45, 56, 67, 78, 89
+
+find mean, median, stndard deviation, maximum and minimum
+
+
+
+"""
+
+marks = np.array([45,56,67,78,89])
+print(f'mean: {np.mean(marks)}')
+print(f'medium: {np.median(marks)}')
+print(f'standard deviation: {round(np.std(marks),2)}')
+print(f'maximum: {np.max(marks)} and \n minimum marks: {np.min(marks)}')
+
+# ************************************************************************************ 
+
+# *********************************************************************************** 
+
+
+"""
+Question 5:
+Using the array below [10,20,30,40,50,60,70,80]
+print first 4 elements
+print alternate elements 
+reverse the array
+replace all elements grater than 50 and 0
+
+Expected concept 
+Indexing, slicing, Boolean Masking 
+"""
+
+arr=np.array([10,20,30,40,50,60,70,80])
+print(f'first 4 element: {arr[:4]}')
+
+print(f'alternate element: {arr[::2]}')
+
+print(f'reverse of array: {arr[::-1]}')
+
+print(f'replace all item greter than 50 with  0')
+
+mask=arr>50
+arr[mask]=0
+print(f'modified array is: \n{arr}')
